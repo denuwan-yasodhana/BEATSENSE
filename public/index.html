@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>Health Monitoring App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // Web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDIF_Usrs0da614muEmg9lzq2vO7fqrnVg",
+      authDomain: "health-monitoring-system-uwu.firebaseapp.com",
+      databaseURL: "https://health-monitoring-system-uwu-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "health-monitoring-system-uwu",
+      storageBucket: "health-monitoring-system-uwu.appspot.com",
+      messagingSenderId: "2045121247",
+      appId: "1:2045121247:web:22dcd97a4e509ca7dacf6a"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+</script>
+<script src="app.js" defer></script>
+
+<style>
+    body
+    {
+        background-image: url('medical.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .textDeco
+    {
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: grey;
+    }
+</style>
+
+</head>
+    <body>
+
+        <div class="container">
+            <div class="row mt-5 mb-5 py-3">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <p class="font-weight-bold text-white display-4">IoT-Based Patient Health Monitoring System</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-9"><h2><i class="fas fa-heartbeat mr-2" style="color: rgb(16, 238, 16);"></i> BPM</h2></div>
+                                <div class="col-3"><p class="value textDeco"  id="bpm"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row py-4">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-9"><h2><i class="fas fa-thermometer-three-quarters mr-4" style="color:red"></i> Body Temperature</h2></div>
+                                <div class="col-3"><p class="value textDeco" id="bTemp"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-9"><h2><i class="fas fa-fan mr-2" style="color: orange;"></i> Room Temperature</h2></div>
+                                <div class="col-3"><p class="value textDeco" id="rTemp"></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+</script>
+
+</body>
+</html>
