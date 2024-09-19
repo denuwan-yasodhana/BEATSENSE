@@ -11,11 +11,11 @@
 #include "addons/TokenHelper.h"
 #include "addons/RTDBHelper.h"
 
-#define WIFI_SSID "Hydra"
-#define WIFI_PASSWORD "divLX404"
+#define WIFI_SSID "*** Enter Wifi SSID ***"
+#define WIFI_PASSWORD "*** Enter Wifi Password ***"
 
-#define API_KEY "AIzaSyDIF_Usrs0da614muEmg9lzq2vO7fqrnVg"
-#define DATABASE_URL "https://health-monitoring-system-uwu-default-rtdb.asia-southeast1.firebasedatabase.app/" 
+#define API_KEY "*** Enter API key ***"
+#define DATABASE_URL "*** Enter Firebase database URL ***" 
 
 FirebaseData fbdo;
 FirebaseAuth auth;
