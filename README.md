@@ -23,5 +23,5 @@ This project is designed to assist individuals, especially those living alone or
 
 
 
-## 🛠️ Project Demo
+## 👀 Project Demo
 https://github.com/denuwan-yasodhana/BEATSENSE/assets/110303643/5eeae935-f2a0-44d2-9713-a854564a016d
